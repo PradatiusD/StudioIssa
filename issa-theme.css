@@ -393,7 +393,7 @@ h2 a:visited,
 	text-transform: uppercase;
 }
 
-.genesis-nav-menu li.PD-mobile {
+.genesis-nav-menu li.PD-mobile, #header .PD-mobile {
 	display: none;
 }
 
@@ -601,15 +601,15 @@ clear: none;*/
 
 .clientlogin {
     background: url('http://studioissa.com/wp-content/themes/issa-studio/images/key-studio-issa.png') no-repeat center;
-/*	width: 300px; */
 	height: 120px;
-	float: right; 
-	position: relative;
-	top: -250px;
-	left: 50%;
-	overflow: hidden;
+	float: none;
+	position: absolute;
+	top: 21px;
+	left: auto;
+	right: 18%;
+	overflow: visible;
 	opacity: .7;
-	color: black;
+	color: #000;
 	text-align: center;
 	z-index: 20;
 }
@@ -3205,6 +3205,12 @@ a.contactus:hover{color:#eee}
 
 }
 
+#header .widget-area {
+	width: 405px;
+	margin: 0 auto;
+	display: block;
+	float: none;
+}
 
 
 
@@ -3266,6 +3272,14 @@ a.contactus:hover{color:#eee}
 		padding: 0 4%;
 	}
 	
+	.clientlogin {
+		right: 10%;
+	}
+
+	.subscribeblog {
+		left:8%;
+	}
+
 	/* Improved services page*/
 
 	.post-170 .entry-content {
@@ -3306,7 +3320,7 @@ a.contactus:hover{color:#eee}
 	#wrap #content,
 	#wrap #content-sidebar-wrap,
 	#wrap #sidebar-alt {
-		width: 100% !important;
+		width: 100%;
 	}
 
 	.genesis-nav-menu li,
@@ -3429,12 +3443,32 @@ a.contactus:hover{color:#eee}
 		top:0;
 		display: block;
 		margin-bottom: 7em;
-		height: 188px;
+		height: 140px;
 		overflow:hidden;
+	}
+
+	#header .wrap {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+
+	#header .menu-button {
+		width: 10%;
+		display: inline-block;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		float: none;
+		z-index: 1000;
 	}
 
 	#nav_menu-2 {
 		margin-top:2em;
+	}
+
+	#text-14, #text-6 img, #text-3 img {
+		display: none;
 	}
 
 	.subscribeblog, .clientlogin {
@@ -3452,6 +3486,10 @@ a.contactus:hover{color:#eee}
 		border-top: 1px solid #e0e0e0;
 		
 	}
+
+	#gallery-1 .gallery-item {
+		width:100% !important;
+	}
 	
 	.genesis-nav-menu li:last-child {
 		border-bottom:1px solid #e0e0e0;
@@ -3461,7 +3499,7 @@ a.contactus:hover{color:#eee}
 		padding:0.5em;
 		color: #FFF;
 	}
-	.genesis-nav-menu li.PD-mobile {
+	.genesis-nav-menu li.PD-mobile, #header .PD-mobile {
 		display:block;
 	}
 }

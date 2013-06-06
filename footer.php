@@ -52,15 +52,15 @@ jQuery('.processSort .processType > a').click(function() {
     $('#menu-header-navigation').append('<li class="PD-mobile"><a href="http://eepurl.com/z1VSL" data-fancybox-type="iframe" class="iframe fancybox" rel="fancybox">Subscribe to Our Blog</a></li><li class="PD-mobile"><a href="http://studioissa.com/client-login/">Client Login</a></li>');
 
     // Add Menu button
-    $('#menu-header-navigation').prepend('<li class="PD-mobile"><a href="#" class="menu-icon">Menu</a></li>');
+    $('#header').prepend('<div class="PD-mobile"><a href="#" class="menu-button"><img src="http://studioissa.com/wp-content/uploads/2013/06/nav-expand-icon.png"></a></div>');
 
     // Expand menu on click of it
-    jQuery(".menu-icon").toggle(
+    jQuery(".menu-button").toggle(
       function () {
-        jQuery('#header').animate({height: '480px'}, 800);
+        jQuery('#header').animate({height: '426px'}, 800);
       },
       function () {
-        jQuery('#header').animate({height: '188px'}, 800);
+        jQuery('#header').animate({height: '140px'}, 800);
       }
     );
   });
