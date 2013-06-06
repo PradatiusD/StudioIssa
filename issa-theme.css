@@ -3265,6 +3265,31 @@ a.contactus:hover{color:#eee}
 		margin: 0 auto;
 		padding: 0 4%;
 	}
+	
+	/* Improved services page*/
+
+	.post-170 .entry-content {
+	    width: 100%;
+	    margin: 0;
+	    padding: 0;
+	}
+
+	.post-170 .one-fifth.first, .post-170 .one-third {
+		width: 44%;
+		display: block;
+		margin: 0 28%;
+	}
+	
+	div.post-170 div.two-thirds.first:first-child {
+		margin-left: 0;
+	}
+	
+	div.post-170 div.two-thirds, .post-170 .four-fifths {
+		width: 94%;
+		padding: 0;
+		margin: 0 3%;
+		display: block;
+	}
 
 	.footer-widgets-1,
 	.footer-widgets-2,
