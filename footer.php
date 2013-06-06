@@ -37,7 +37,7 @@ jQuery('.processSort .processType > a').click(function() {
     //function to correctly provide height for panes
     function fixrevealHeight () {
             var pictureframeWidth = jQuery('.pictureframe').width();
-            jQuery('a.reveal').height(pictureframeWidth/2.4);
+            jQuery('a.reveal').height(pictureframeWidth/2.42);
 
     }
     // Call it on DOM ready
@@ -49,12 +49,25 @@ jQuery('.processSort .processType > a').click(function() {
     });
 
     // Function to add client login and subscribe to log links at end of list
-    $('#menu-header-navigation').append('<li class="PD-mobile"><a href="http://eepurl.com/z1VSL" data-fancybox-type="iframe" class="iframe fancybox" rel="fancybox">Subscribe to Our Blog</a></li><li class="PD-mobile"><a href="http://studioissa.com/client-login/">Client Login</a></li>')
+    $('#menu-header-navigation').append('<li class="PD-mobile"><a href="http://eepurl.com/z1VSL" data-fancybox-type="iframe" class="iframe fancybox" rel="fancybox">Subscribe to Our Blog</a></li><li class="PD-mobile"><a href="http://studioissa.com/client-login/">Client Login</a></li>');
 
     // Add Menu button
-    $('#menu-header-navigation').prepend('<li><a href="#" class="menu-icon">Menu</a></li>')
-  })
+    $('#menu-header-navigation').prepend('<li class="PD-mobile"><a href="#" class="menu-icon">Menu</a></li>');
+
+    // Expand menu on click of it
+    jQuery(".menu-icon").toggle(
+      function () {
+        jQuery('#header').animate({height: '480px'}, 800);
+      },
+      function () {
+        jQuery('#header').animate({height: '188px'}, 800);
+      }
+    );
+  });
 </script>
+
+
+
 
 <script>
   //<![CDATA[

@@ -393,7 +393,7 @@ h2 a:visited,
 	text-transform: uppercase;
 }
 
-.PD-mobile {
+.genesis-nav-menu li.PD-mobile {
 	display: none;
 }
 
@@ -3259,6 +3259,13 @@ a.contactus:hover{color:#eee}
 		margin-top:0;
 	}
 
+	.contact-page .two-fifths, .contact-page .three-fifths {
+		width: 92%;
+		display: block;
+		margin: 0 auto;
+		padding: 0 4%;
+	}
+
 	.footer-widgets-1,
 	.footer-widgets-2,
 	.footer-widgets-3,
@@ -3342,6 +3349,10 @@ a.contactus:hover{color:#eee}
 		margin: 0;
 	}
 
+	.processSort .one-third {
+		width:24%;
+	}
+
 }
 
 /* iPhones (portrait and landscape) ----------- */
@@ -3393,7 +3404,8 @@ a.contactus:hover{color:#eee}
 		top:0;
 		display: block;
 		margin-bottom: 7em;
-		height: 410px;
+		height: 188px;
+		overflow:hidden;
 	}
 
 	#nav_menu-2 {
@@ -3424,7 +3436,7 @@ a.contactus:hover{color:#eee}
 		padding:0.5em;
 		color: #FFF;
 	}
-	.PD-mobile {
+	.genesis-nav-menu li.PD-mobile {
 		display:block;
 	}
 }
