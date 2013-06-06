@@ -1824,7 +1824,6 @@ p.wp-caption-text {
 }*/
 #featured-home {
         width: 100%;
-        height: 450px !important;
         background-color: #EFEFEF;
         overflow: hidden;
 }
@@ -3247,6 +3246,16 @@ a.contactus:hover{color:#eee}
 	    margin: 0 auto;
 	}
 
+	a.contactus {
+		left:0;
+		margin:0 auto;
+	}
+
+	.pictureframe {
+		margin:0;
+		margin-top:0;
+	}
+
 	.footer-widgets-1,
 	.footer-widgets-2,
 	.footer-widgets-3,
@@ -3373,10 +3382,5 @@ a.contactus:hover{color:#eee}
 	.two-thirds {
 		margin: 0;
 		width: 100%;
-	}
-
-	a.contactus {
-		left:0;
-		margin:0 auto;
 	}
 }

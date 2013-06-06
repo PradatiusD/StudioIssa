@@ -32,7 +32,24 @@ jQuery('.processSort .processType > a').click(function() {
 </script>
 
 
+<script>
+  jQuery(document).ready(function($){
+    //function to correctly provide height for panes
+    function fixrevealHeight () {
+            var pictureframeWidth = jQuery('.pictureframe').width();
+            jQuery('a.reveal').height(pictureframeWidth/2.4);
 
+    }
+    // Call it on DOM ready
+    fixrevealHeight();
+
+    //And call it when browser resizes
+    $(window).resize(function() {
+      fixrevealHeight();
+    });
+
+  })
+</script>
 
 
 
