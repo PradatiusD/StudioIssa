@@ -393,6 +393,9 @@ h2 a:visited,
 	text-transform: uppercase;
 }
 
+.PD-mobile {
+	display: none;
+}
 
 /*
 04 Layout
@@ -3382,5 +3385,46 @@ a.contactus:hover{color:#eee}
 	.two-thirds {
 		margin: 0;
 		width: 100%;
+	}
+
+
+	/* Navigation for iphone */
+	#header {
+		top:0;
+		display: block;
+		margin-bottom: 7em;
+		height: 410px;
+	}
+
+	#nav_menu-2 {
+		margin-top:2em;
+	}
+
+	.subscribeblog, .clientlogin {
+		display: none;
+	}
+	
+	.genesis-nav-menu {
+		margin-top:1em;
+	}
+
+	.genesis-nav-menu li {
+		display: block;
+		background: gray;
+		font-weight: bold;
+		border-top: 1px solid #e0e0e0;
+		
+	}
+	
+	.genesis-nav-menu li:last-child {
+		border-bottom:1px solid #e0e0e0;
+	}
+
+	.genesis-nav-menu li a {
+		padding:0.5em;
+		color: #FFF;
+	}
+	.PD-mobile {
+		display:block;
 	}
 }

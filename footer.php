@@ -48,10 +48,13 @@ jQuery('.processSort .processType > a').click(function() {
       fixrevealHeight();
     });
 
+    // Function to add client login and subscribe to log links at end of list
+    $('#menu-header-navigation').append('<li class="PD-mobile"><a href="http://eepurl.com/z1VSL" data-fancybox-type="iframe" class="iframe fancybox" rel="fancybox">Subscribe to Our Blog</a></li><li class="PD-mobile"><a href="http://studioissa.com/client-login/">Client Login</a></li>')
+
+    // Add Menu button
+    $('#menu-header-navigation').prepend('<li><a href="#" class="menu-icon">Menu</a></li>')
   })
 </script>
-
-
 
 <script>
   //<![CDATA[
