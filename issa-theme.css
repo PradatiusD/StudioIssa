@@ -397,6 +397,12 @@ h2 a:visited,
 	display: none;
 }
 
+.processSort .one-third {
+    width: 33%;
+    padding: 0;
+    margin: 0;
+}
+
 /*
 04 Layout
 ---------------------------------------------------------------------------------------------------- */
@@ -3388,8 +3394,32 @@ a.contactus:hover{color:#eee}
 		margin: 0;
 	}
 
-	.processSort .one-third {
-		width:24%;
+	#SlideDeck-491, #SlideDeck-491-frame, #SlideDeck-491 dd {
+		height:1000px !important;
+		width:100% !important;
+	}
+
+	.clipboard-first, .clipboard {
+		float: none;
+		display: inline-block;
+		padding: 0;
+		vertical-align: top;
+		min-height: 0;
+	}
+
+	.processType span.SliderCaption {
+    	font-size:16px;
+	}
+
+}
+
+/* Only iPad (not Iphone or desktop) */
+
+@media only screen and (min-width:481px) and (max-width: 768px) {
+
+	.clipboard-first, .clipboard {
+		width: 40%;
+		margin: 16px 2.5% 10px 2.5%;
 	}
 
 }
@@ -3501,5 +3531,10 @@ a.contactus:hover{color:#eee}
 	}
 	.genesis-nav-menu li.PD-mobile, #header .PD-mobile {
 		display:block;
+	}
+
+	.clipboard-first, .clipboard {
+		width: 90%;
+		margin: 16px 2.5% 10px 2.5%;
 	}
 }
