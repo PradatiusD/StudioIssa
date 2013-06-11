@@ -3212,11 +3212,6 @@ a.contactus:hover{color:#eee}
 
 @media only screen and (max-width: 768px) {
 
-	#inner {
-		padding: 32px 5%;
-		padding: 2rem 5%;
-	}
-
 	#about,
 	#services {
 		padding:1em 0em;
