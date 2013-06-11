@@ -48,6 +48,14 @@ jQuery('.processSort .processType > a').click(function() {
       fixrevealHeight();
     });
 
+    // Change opacity of up arrow as user scrolls down
+    jQuery(window).scroll(function () {
+      var screenHeight = jQuery(window).height();
+      var htmlHeight = jQuery(document).height();
+      var currentPosition = window.pageYOffset;
+      jQuery('#scroll-top span').css('opacity', currentPosition/htmlHeight);
+    });
+
     // Function to add client login and subscribe to log links at end of list
     $('#menu-header-navigation').append('<li class="PD-mobile"><a href="http://eepurl.com/z1VSL" data-fancybox-type="iframe" class="iframe fancybox" rel="fancybox">Subscribe to Our Blog</a></li><li class="PD-mobile"><a href="http://studioissa.com/client-login/">Client Login</a></li>');
 
