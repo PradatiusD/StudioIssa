@@ -416,6 +416,10 @@ h2 a:visited,
 	max-width: 1080px;
 }
 
+#inner {
+	padding:0;
+}
+
 .wrapheader  {
 	margin: 0 auto;
 	position: relative;
@@ -777,7 +781,6 @@ margin: 0 auto;
 	background: url(images/innovators-for-the-public-v2.png) no-repeat center right #fff;
 	text-shadow: 1px 1px 0 #fff;
 	/*font-weight: bold;*/
-	border-top: 1px solid #eaebeb;
 	clear:both;
 	padding: 3rem 0 6rem;
 	max-width: 100%;
@@ -850,6 +853,7 @@ margin: 0 auto;
 #services,
 #contact {
 	min-height: 70px;
+	padding:2em;
 }
 
 #contact {
@@ -2783,11 +2787,6 @@ body.home #contact {
 	overflow: visible;
 }
 
-#signupbutton {
-	position: relative;
-	top: 50px;
-}
-
 /* End of Jaime's addition */
 
 
@@ -3216,6 +3215,15 @@ a.contactus:hover{color:#eee}
 	#inner {
 		padding: 32px 5%;
 		padding: 2rem 5%;
+	}
+
+	#about,
+	#services {
+		padding:1em 0em;
+	}
+
+	#contact {
+		padding:1em;
 	}
 
 	.footer-widgets {
