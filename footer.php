@@ -48,12 +48,15 @@ jQuery('.processSort .processType > a').click(function() {
       fixrevealHeight();
     });
 
+    // Turn opacity to zero on load
+    $('#scroll-top span').css('opacity', 0)
+
     // Change opacity of up arrow as user scrolls down
-    jQuery(window).scroll(function () {
-      var screenHeight = jQuery(window).height();
-      var htmlHeight = jQuery(document).height();
+    $(window).scroll(function () {
+      var screenHeight = $(window).height();
+      var htmlHeight = $(document).height();
       var currentPosition = window.pageYOffset;
-      jQuery('#scroll-top span').css('opacity', currentPosition/htmlHeight);
+      $('#scroll-top span').css('opacity', currentPosition/htmlHeight);
     });
 
     // Function to add client login and subscribe to log links at end of list
