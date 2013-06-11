@@ -455,27 +455,7 @@ h2 a:visited,
 #inner {
 	clear: both;
 	overflow: hidden;
-	/*padding: 100px 0 16px;
-	padding: 6.5rem 0 1rem;*/
-	position: relative;
-	top: -8em;
-	top: -9rem;
-	margin-bottom: -9rem; /* inserted by Jaime */
 }
-
-.mp-home #inner {
-	padding: 1.5em 0 0 0;
-	max-width: 100%;
-}
-
-/* Inserted by Jaime */
-.mp-home #footer {
-	position: relative;
-	margin-top: -16.3rem;
-	margin-bottom: -14rem;
-}
-
-/* End insert by Jaime */
 
 .greybg #inner {
 	padding: 0 0 0 0;
@@ -547,12 +527,7 @@ h2 a:visited,
 /* 04c - Header ----------- */
 
 #header {
-/*	overflow: hidden;
-	position: fixed;
-	width: 100%;
-	background-color: white;*/
-	top: -120px;
-	position: relative;
+
 }
 
 .mp-home #header {
@@ -590,7 +565,7 @@ clear: none;*/
      background: url('http://studioissa.com/wp-content/themes/issa-studio/images/paperplane.png') no-repeat center;
      width: 200px;
      height: 124px;
-     position: relative;
+     position: absolute;
      top:20px;
 	left: 15%;
      overflow: visible;
@@ -3480,7 +3455,6 @@ a.contactus:hover{color:#eee}
 	#header {
 		top:0;
 		display: block;
-		margin-bottom: 7em;
 		height: 140px;
 		overflow:hidden;
 	}
@@ -3546,9 +3520,11 @@ a.contactus:hover{color:#eee}
 		margin: 16px 2.5% 10px 2.5%;
 	}
 
-	/* Removal of services tab for mobile */
-
-	#menu-item-508 {
-	    display: none;
+	h1.entry-title {
+	font-size: 2em;
+	line-height: 1em;	
+	text-align: center;
+	display: block;
+	margin-top: 1em;
 	}
 }
