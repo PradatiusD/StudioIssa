@@ -14,15 +14,15 @@ The details of our services are marked below.[/one_half_first][one_half][/one_ha
 <div class="processSort">
 
 [one_third]
-<div class="processType" id="marketing"><a class="goToSlide active" href="1"><img alt="Marketing Icon" src="http://studioissa.com/wp-content/themes/issa-studio/images/marketingicon-si.png" /><span class="SliderCaption">Marketing</span></a></div>
+<div class="processType" id="marketing"><a class="goToSlide active" href="1"><img alt="Marketing Icon" src="http://studioissa.com/wp-content/uploads/2013/06/marketingicon-si.png" /><span class="SliderCaption">Marketing</span></a></div>
 [/one_third]
 
 [one_third]
-<div class="processType" id="identity"><a class="goToSlide" href="2"><img alt="Design Icon Studio Issa" src="http://studioissa.com/wp-content/themes/issa-studio/images/designicon-si.png" /><span class="SliderCaption">Design</span></a></div>
+<div class="processType" id="identity"><a class="goToSlide" href="2"><img alt="Design Icon Studio Issa" src="http://studioissa.com/wp-content/uploads/2013/06/designicon-si.png" /><span class="SliderCaption">Design</span></a></div>
 [/one_third]
 
 [one_third]
-<div class="processType" id="artdirection"><a class="goToSlide" href="3"><img alt="Art Direction Icon Studio Issa" src="http://studioissa.com/wp-content/themes/issa-studio/images/artdirectionicon-si.png" /><span class="SliderCaption">Art Direction</span></a></div>
+<div class="processType" id="artdirection"><a class="goToSlide" href="3"><img alt="Art Direction Icon Studio Issa" src="http://studioissa.com/wp-content/uploads/2013/06/artdirectionicon-si.png" /><span class="SliderCaption">Art Direction</span></a></div>
 [/one_third]
 
 </div>
