@@ -3463,7 +3463,7 @@ a.contactus:hover{color:#eee}
 	#header {
 		top:0;
 		display: block;
-		height: 140px;
+		height: 188px;
 		overflow:hidden;
 	}
 
@@ -3477,7 +3477,7 @@ a.contactus:hover{color:#eee}
 		width: 10%;
 		display: inline-block;
 		position: absolute;
-		top: 10px;
+		top: 153px;
 		right: 10px;
 		float: none;
 		z-index: 1000;
@@ -3502,9 +3502,18 @@ a.contactus:hover{color:#eee}
 	.genesis-nav-menu li {
 		display: block;
 		background: gray;
-		font-weight: bold;
+		font-weight: normal;
 		border-top: 1px solid #e0e0e0;
 		
+	}
+
+	#menu-item-508 a{
+		opacity: 0;
+		color:#27b4b2;
+	}
+
+	.genesis-nav-menu li:first-child {
+		background: white;		
 	}
 
 	#gallery-1 .gallery-item {
@@ -3529,11 +3538,11 @@ a.contactus:hover{color:#eee}
 	}
 
 	h1.entry-title {
-	font-size: 2em;
-	line-height: 1em;	
-	text-align: center;
-	display: block;
-	margin-top: 1em;
+		font-size: 2em;
+		line-height: 1em;	
+		text-align: center;
+		display: block;
+		margin-top: 1em;
 	}
 	
 	.processSort .one-third {

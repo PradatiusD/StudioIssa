@@ -36,8 +36,8 @@ jQuery('.processSort .processType > a').click(function() {
   jQuery(document).ready(function($){
     //function to correctly provide height for panes
     function fixrevealHeight () {
-            var pictureframeWidth = jQuery('.pictureframe').width();
-            jQuery('a.reveal').height(pictureframeWidth/2.42);
+            var pictureframeWidth = $('.pictureframe').width();
+            $('a.reveal').height(pictureframeWidth/2.42);
 
     }
     // Call it on DOM ready
@@ -74,12 +74,14 @@ jQuery('.processSort .processType > a').click(function() {
     $('#header').prepend('<div class="PD-mobile"><a href="#" class="menu-button"><img src="http://studioissa.com/wp-content/uploads/2013/06/nav-expand-icon.png"></a></div>');
 
     // Expand menu on click of it
-    jQuery(".menu-button").toggle(
+    $(".menu-button").toggle(
       function () {
-        jQuery('#header').animate({height: '426px'}, 800);
+        $('#header').animate({height: '426px'}, 800);
+        $('#menu-item-508 a').animate({opacity : 1}, 500);
       },
       function () {
-        jQuery('#header').animate({height: '140px'}, 800);
+        $('#header').animate({height: '188px'}, 800);
+        $('#menu-item-508 a').animate({opacity : 0}, 500);
       }
     );
   });
