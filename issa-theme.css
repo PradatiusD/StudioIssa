@@ -2778,10 +2778,6 @@ div.post-170 .entry-title {
 	text-align: center;
 }
 
-div.post-170 div.two-thirds.first:first-child {
-	margin-left: 16%;
-}
-
 div.post-482 div.central h2 {
 /*	background: url("http://studioissa.com/wp-content/uploads/2013/05/services-bar.png") no-repeat; */
 	padding-top: 10px;
@@ -3268,29 +3264,14 @@ a.contactus:hover{color:#eee}
 		left:8%;
 	}
 
-	/* Improved services page*/
-
-	.post-170 .entry-content {
-	    width: 100%;
-	    margin: 0;
-	    padding: 0;
+	.entry-content, .entry-title {
+	    padding: 0 5%;
 	}
 
 	.post-170 .one-fifth.first, .post-170 .one-third {
 		width: 44%;
 		display: block;
 		margin: 0 28%;
-	}
-	
-	div.post-170 div.two-thirds.first:first-child {
-		margin-left: 0;
-	}
-	
-	div.post-170 div.two-thirds, .post-170 .four-fifths {
-		width: 94%;
-		padding: 0;
-		margin: 0 3%;
-		display: block;
 	}
 
 	.footer-widgets-1,
@@ -3544,11 +3525,30 @@ a.contactus:hover{color:#eee}
 		display: block;
 		margin-top: 1em;
 	}
+
+	h2 {
+		display: block;
+		margin: 0 auto;
+		padding:0;
+		text-align: center;
+	}
 	
 	.processSort .one-third {
 		width:100%;
 	}
 	.processSort .one-third img, .processSort .one-third p {
 		display:none;
+	}
+
+	#yearbook ul {
+		margin:0;
+	}
+
+	#yearbook li.leftmost {
+		margin-bottom:2em;
+	}
+
+	#timemachine {
+		display: none;
 	}
 }
