@@ -2248,6 +2248,11 @@ a.reveal:hover .pane {
 	text-decoration: none;
 }
 
+.goToSlide img {
+    display: block;
+    margin: 0 auto;
+}
+
 .processSort h3.active,
 .processSort a.active span  {
      display:  inline-block !important;
@@ -3529,5 +3534,12 @@ a.contactus:hover{color:#eee}
 	text-align: center;
 	display: block;
 	margin-top: 1em;
+	}
+	
+	.processSort .one-third {
+		width:100%;
+	}
+	.processSort .one-third img, .processSort .one-third p {
+		display:none;
 	}
 }

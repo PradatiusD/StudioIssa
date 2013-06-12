@@ -48,6 +48,14 @@ jQuery('.processSort .processType > a').click(function() {
       fixrevealHeight();
     });
 
+    // Change section header colors when you click on their corresponding
+    // text values on the services page
+      var colorValues = ['#757f8c', '#5b544e', '#3a4341'];
+      $('.goToSlide').click(function(){
+          indexOf = $(this).parent().parent().index();
+          $('.clipboard h3, .clipboard-first h3').css('color', colorValues[indexOf])
+      })      
+
     // Turn opacity to zero on load
     $('#scroll-top span').css('opacity', 0)
 
