@@ -1418,6 +1418,13 @@ label {
 	line-height: 1.5;
 	padding-top: 8px;
 	padding-top: 0.5rem;
+	position: fixed;
+	top: 250px;
+	right: 5%;
+	width: 270px;
+	height: 300px;
+	background: rgba(255, 255, 255, 0.69);
+	padding: 1em;
 }
 
 .sidebar p {
@@ -1432,7 +1439,6 @@ label {
 }
 
 .sidebar .widget::after {
-	border-bottom: 1px solid #222;
 	content: "";
 	display: block;
 	padding-bottom: 32px;
@@ -2614,9 +2620,33 @@ span.SliderCaption {
 	float: right;
 	}
 	
-	
-	
-	
+/* Blog layout */
+
+.page-id-37 {
+    background-image:url('http://studioissa.com/wp-content/uploads/2013/06/innovators-for-the-public.png');
+    background-size:100%;
+    background-repeat:no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+.page-id-37 #inner {
+	 max-width: 100%;	
+}
+
+.page-id-37 #content {
+	width: 43%;
+	margin-left:26%;
+}
+
+.page-id-37 h2 a {
+    font-size: 39px; text-align: center; display: block;
+}
+
+.page-id-37 .post-info {
+	text-align: center;
+}
+
 	
 /* Testimonials By WooThemes Widget */
 .widget_woothemes_testimonials .quote {
