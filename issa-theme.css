@@ -461,6 +461,10 @@ h2 a:visited,
 	overflow: hidden;
 }
 
+.home #inner {
+    max-width: 100%;
+}
+
 .greybg #inner {
 	padding: 0 0 0 0;
 	max-width: 100%;
@@ -715,6 +719,11 @@ margin: 0 auto;
 #about {
 	padding: 90px 0;
 	padding: 3rem 0;
+}
+
+.post-170 .two-thirds.first:first-child {
+    float: none;
+    margin: 0 auto;
 }
 
 #blog,
@@ -1911,7 +1920,7 @@ a.reveal:hover .pane {
 }
 
 #fh-h1, #fh-i2, #fh-f3 {
-	width:33%;
+	width:33.33%;
 }
 
 #fh-h1 .pane, #fh-i2 .pane, #fh-f3 .pane {
@@ -2573,8 +2582,8 @@ span.SliderCaption {
   height: 160px;
   background: url(http://studioissa.com/wp-content/themes/issa-studio/images/time-machine1.png);
   background-position: 0px 0px;
-  right: 0px;
-  top: 740px; }
+  right: 10%;
+  top: 949px; }
   
 #timemachine.past {
 		background: url(http://studioissa.com/wp-content/themes/issa-studio/images/time-machine2.png);
