@@ -48,6 +48,19 @@ jQuery('.processSort .processType > a').click(function() {
       fixrevealHeight();
     });
 
+    // On the blog page, make the read more tags have title information
+    // and below each post also have the correct meta data
+    if (document.URL==="http://studioissa.com/blog/") {
+      var postAmount = jQuery('.post').length;
+      for (var i = 0; i < postAmount; i++) {
+        var postObject = jQuery('.post').eq(i);
+        var readmoreText = postObject.find('.entry-title a').text();
+        var postinfoHTML = postObject.find('.post-info').html();
+        postObject.find('.more-link').html('Read more about <span style="font-style:oblique">'+readmoreText+'</span>');
+        postObject.find('.entry-content').append(postinfoHTML)
+      };
+    }
+
     // Change section header colors when you click on their corresponding
     // text values on the services page
       var colorValues = ['#757f8c', '#5b544e', '#3a4341'];

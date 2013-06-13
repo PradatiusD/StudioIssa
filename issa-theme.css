@@ -1416,15 +1416,7 @@ label {
 .sidebar {
 	display: inline;
 	line-height: 1.5;
-	padding-top: 8px;
-	padding-top: 0.5rem;
-	position: fixed;
-	top: 250px;
-	right: 5%;
-	width: 270px;
-	height: 300px;
-	background: rgba(255, 255, 255, 0.69);
-	padding: 1em;
+	background: rgba(255, 255, 255, 0.85);
 }
 
 .sidebar p {
@@ -2635,18 +2627,68 @@ span.SliderCaption {
 }
 
 .page-id-37 #content {
-	width: 43%;
+	width: 39%;
 	margin-left:26%;
+	background: rgba(255, 255, 255, 0.45);
+	padding: 0% 2.5%;
 }
 
 .page-id-37 h2 a {
-    font-size: 39px; text-align: center; display: block;
+    font-size: 39px;
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 0.5em 0em;
+    color: #b3b3b3;
+    background: rgba(39, 39, 39, 0.96);
+    font-weight: 300;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #454545;
+	transition: color 0.5s;
+	-webkit-transition:color 0.5s;
+	-o-transition:color 0.5s;
+	-moz-transition:color 0.5s;
+}
+
+.page-id-37 h2 a:hover {
+	color:#27b4b2;
+}
+
+.page-id-37 .entry-content img {
+	max-width: 100%;
+	height: auto;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 0px 12px 8px -8px rgba(0, 0, 0, 0.57);
 }
 
 .page-id-37 .post-info {
 	text-align: center;
 }
 
+.page-id-37 .post > .post-info {
+	display: none;
+}
+
+.page-id-37 .more-link {
+    display: block;
+    background: #27B4B2;
+    color: white;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    text-align: center;
+    border: 7px solid #6DD1D1;
+    border-radius: 0.5em;
+    transition: background 0.5s;
+	-webkit-transition:background 0.5s;
+	-o-transition:background 0.5s;
+	-moz-transition:background 0.5s;
+}
+
+.page-id-37 .more-link:hover {
+	background: rgb(109, 209, 209);
+}
 	
 /* Testimonials By WooThemes Widget */
 .widget_woothemes_testimonials .quote {
