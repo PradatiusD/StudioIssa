@@ -46,6 +46,15 @@ jQuery('.processSort .processType > a').click(function() {
     //And call it when browser resizes
     $(window).resize(function() {
       fixrevealHeight();
+      // Also If browser width is greater than iphone size make sure 
+      // that Services tab has the correct level of opacity
+      if (document.body.clientWidth > 480) {
+          $('#menu-item-508 a').css('opacity', 1);
+          $('#header').css('height', '208px');
+      } else {
+          $('#menu-item-508 a').css('opacity', 0);
+          $('#header').css('height','188px');
+      }
     });
 
     // On the blog page, make the read more tags have title information
@@ -54,11 +63,16 @@ jQuery('.processSort .processType > a').click(function() {
       var postAmount = jQuery('.post').length;
       for (var i = 0; i < postAmount; i++) {
         var postObject = jQuery('.post').eq(i);
-        var readmoreText = postObject.find('.entry-title a').text();
         var postinfoHTML = postObject.find('.post-info').html();
-        postObject.find('.more-link').html('Read more about <span style="font-style:oblique">'+readmoreText+'</span>');
+        postObject.find('.more-link').html('Read more...');
         postObject.find('.entry-content').append(postinfoHTML)
       };
+    // Also place the blog title in the top, as pulled from the widget area
+    var titleHTML = jQuery('#text-24').html();
+    jQuery('#text-24').remove();
+    jQuery('#inner').prepend(titleHTML);
+    jQuery('#inner > .widget-wrap').eq(0).wrap('<div id="blogTitle">');
+
     }
 
     // Change section header colors when you click on their corresponding

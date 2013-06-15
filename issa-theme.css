@@ -828,8 +828,9 @@ margin: 0 auto;
 
 .entry,
 .page .post.entry {
-	margin-bottom: 80px;
-	margin-bottom: 5rem;
+	margin: 2em auto;
+	background: rgba(229, 233, 127, 0.21);
+	padding: 5%;
 }
 
 .mp-home .featuredpost .entry,
@@ -911,7 +912,6 @@ blockquote::before {
 }
 
 .post-meta::before {
-	border-top: 1px solid #222;
 	content: "";
 	display: block;
 	padding-bottom: 32px;
@@ -1417,6 +1417,8 @@ label {
 	display: inline;
 	line-height: 1.5;
 	background: rgba(255, 255, 255, 0.85);
+	width: 25%;
+	margin-top: 2em;
 }
 
 .sidebar p {
@@ -1425,8 +1427,8 @@ label {
 }
 
 .sidebar .widget {
-	margin-bottom: 32px;
-	margin-bottom: 2rem;
+	padding:1em;
+	margin: 0;
 	overflow: hidden;
 }
 
@@ -2581,7 +2583,9 @@ span.SliderCaption {
   background: url(http://studioissa.com/wp-content/themes/issa-studio/images/time-machine1-v3.png);
   background-position: 0px 0px;
   right: 10%;
-  top: 949px; }
+  top: 877px;
+  cursor:pointer; 
+}
   
 #timemachine.past {
 		background: url(http://studioissa.com/wp-content/themes/issa-studio/images/time-machine2-v3.png);
@@ -2614,6 +2618,21 @@ span.SliderCaption {
 	
 /* Blog layout */
 
+#blogTitle {
+    background:white;
+}
+
+#blogTitle .widgettitle {
+    display:none;
+}
+#blogTitle h1 {
+    width:95%;
+    margin: 0 auto;
+    text-align:center;
+    font-size:2em;
+    padding: 10px 0;
+}
+
 .page-id-37 {
     background-image:url('http://studioissa.com/wp-content/uploads/2013/06/innovators-for-the-public.png');
     background-size:100%;
@@ -2623,32 +2642,28 @@ span.SliderCaption {
 }
 
 .page-id-37 #inner {
-	 max-width: 100%;	
+	max-width: 100%;	
 }
 
 .page-id-37 #content {
-	width: 39%;
-	margin-left:26%;
-	background: rgba(255, 255, 255, 0.45);
+	width: 45%;
+	margin-left: 25%;
 	padding: 0% 2.5%;
 }
 
 .page-id-37 h2 a {
-    font-size: 39px;
-    text-align: center;
     display: block;
     margin: 0;
-    padding: 0.5em 0em;
-    color: #b3b3b3;
-    background: rgba(39, 39, 39, 0.96);
-    font-weight: 300;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    background-color: #454545;
+    background-color: black;
 	transition: color 0.5s;
 	-webkit-transition:color 0.5s;
 	-o-transition:color 0.5s;
 	-moz-transition:color 0.5s;
+    font-weight: bold;
+    font-size: 30px;
+    color: #F1F1F1;
+    text-align: left;
+    padding: 5%;
 }
 
 .page-id-37 h2 a:hover {
@@ -2658,9 +2673,6 @@ span.SliderCaption {
 .page-id-37 .entry-content img {
 	max-width: 100%;
 	height: auto;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	box-shadow: 0px 12px 8px -8px rgba(0, 0, 0, 0.57);
 }
 
 .page-id-37 .post-info {
@@ -2673,22 +2685,12 @@ span.SliderCaption {
 
 .page-id-37 .more-link {
     display: block;
-    background: #27B4B2;
-    color: white;
-    padding: 0.5em 1em;
+    background: none;
+    color: #27B4B2;
     margin-top: 1em;
-    text-align: center;
-    border: 7px solid #6DD1D1;
-    border-radius: 0.5em;
-    transition: background 0.5s;
-	-webkit-transition:background 0.5s;
-	-o-transition:background 0.5s;
-	-moz-transition:background 0.5s;
+    text-align: left;
 }
 
-.page-id-37 .more-link:hover {
-	background: rgb(109, 209, 209);
-}
 	
 /* Testimonials By WooThemes Widget */
 .widget_woothemes_testimonials .quote {
