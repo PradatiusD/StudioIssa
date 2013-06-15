@@ -2576,15 +2576,15 @@ span.SliderCaption {
 
 #timemachine {
   position: absolute;
-  width: 160px;
-  height: 160px;
-  background: url(http://studioissa.com/wp-content/themes/issa-studio/images/time-machine1.png);
+  width: 288px;
+  height: 216px;
+  background: url(http://studioissa.com/wp-content/themes/issa-studio/images/time-machine1-v3.png);
   background-position: 0px 0px;
   right: 10%;
   top: 949px; }
   
 #timemachine.past {
-		background: url(http://studioissa.com/wp-content/themes/issa-studio/images/time-machine2.png);
+		background: url(http://studioissa.com/wp-content/themes/issa-studio/images/time-machine2-v3.png);
 	}
 	
 #timemachine.dance1 {
