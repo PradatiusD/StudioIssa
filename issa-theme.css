@@ -998,6 +998,12 @@ blockquote::before {
 
 /* 04h - Miscellaneous ----------- */
 
+/* Custom for about page  */
+.post-170 section:last-of-type h2 {
+    text-align: right;
+}
+
+
 a.social-buttons {
 	background-color: #888;
 	float: left;
@@ -2449,6 +2455,9 @@ span.SliderCaption {
 }
 
 
+
+
+
 /*
 14 Yearbook from wistia.com/about/yearbook/
 ---------------------------------------------------------------------------------------------------- */
@@ -3272,10 +3281,11 @@ a.contactus:hover{color:#eee}
 }
 
 #header .widget-area {
-	width: 405px;
+	width: auto;
 	margin: 0 auto;
 	display: block;
 	float: none;
+	text-align: center;
 }
 
 
@@ -3284,15 +3294,43 @@ a.contactus:hover{color:#eee}
 14 Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
+
+/* Special media query targeting services clipboard
+   cards so they render correctly on resolutions
+   smaller than 1140px  ----------- */
+
+@media only screen and (max-width: 1140px) {
+
+	.clipboard-first, .clipboard {
+		float: none;
+		display: inline-block;
+		padding: 0;
+		vertical-align: top;
+		min-height: 0;
+		width: 17%;
+	}
+	#SlideDeck-491, #SlideDeck-491-frame, #SlideDeck-491 dd {
+		height:600px !important;
+	}
+}
+
+
 /* Desktops, laptops and iPads (landscape) ----------- */
 
 @media only screen and (max-width: 1024px) {
-
 	.wrap,
 	#inner {
 		max-width: 960px;
 	}
-
+	.page-id-37 {
+		background: none;
+	}
+	#map {
+		display: none;
+	}
+	#timemachine {
+		display: none;
+	}
 }
 
 /* iPads (portrait) ----------- */
@@ -3378,6 +3416,12 @@ a.contactus:hover{color:#eee}
 		width: 100%;
 	}
 
+	.page-id-37 #wrap  #content {
+		width: 80%;
+		margin: 0 5%;
+		padding: 15px 5%;
+	}
+
 	.genesis-nav-menu li,
 	#footer .creds,
 	#footer .gototop,
@@ -3444,17 +3488,11 @@ a.contactus:hover{color:#eee}
 	}
 
 	#SlideDeck-491, #SlideDeck-491-frame, #SlideDeck-491 dd {
-		height:1000px !important;
+		height:750px !important;
 		width:100% !important;
 	}
 
-	.clipboard-first, .clipboard {
-		float: none;
-		display: inline-block;
-		padding: 0;
-		vertical-align: top;
-		min-height: 0;
-	}
+
 
 	.processType span.SliderCaption {
     	font-size:16px;
@@ -3467,10 +3505,9 @@ a.contactus:hover{color:#eee}
 		padding: 0%;
 		margin: 2%;
 	}
-
 }
 
-/* Only iPad (not Iphone or desktop) */
+/* Only iPad Portrait (not Iphone or desktop) */
 
 @media only screen and (min-width:481px) and (max-width: 768px) {
 
