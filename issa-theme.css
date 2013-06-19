@@ -2490,10 +2490,6 @@ span.SliderCaption {
       background: #eeeeee;
       border: 7px solid white; }
 
-  #yearbook li.leftmost {
-    padding-left: 0px;
-    margin-left: 0;
-}
 
   #yearbook h2, #yearbook a {
     font-size: 14px;
