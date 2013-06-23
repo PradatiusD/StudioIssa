@@ -3327,6 +3327,26 @@ a.contactus:hover{color:#eee}
 	#timemachine {
 		display: none;
 	}
+	.page-id-37 #wrap  #content, .page-id-37 #sidebar {
+		width: 80%;
+		margin: 0 5%;
+		padding: 15px 5%;
+	}
+	.page-id-37 .entry-content img {
+		width:100%;
+	}
+
+}
+
+/* Only screens larger than portrait iPad */
+
+@media only screen and (min-width: 769px) {
+	.post-443 .alignleft, .post-443 .alignright {
+		float: none;
+		text-align: left;
+		display: block;
+		margin:1.4em 0em;
+	}
 }
 
 /* iPads (portrait) ----------- */
@@ -3426,6 +3446,8 @@ a.contactus:hover{color:#eee}
 		float: none;
 	}
 
+
+
 	.genesis-nav-menu,
 	#footer .creds,
 	#footer .gototop,
@@ -3488,7 +3510,13 @@ a.contactus:hover{color:#eee}
 		width:100% !important;
 	}
 
+	.post-170 section:last-of-type h2 {
+		text-align: center;
+	}
 
+	.post-170 .post-edit-link {
+		display: none;
+	}
 
 	.processType span.SliderCaption {
     	font-size:16px;
@@ -3501,6 +3529,19 @@ a.contactus:hover{color:#eee}
 		padding: 0%;
 		margin: 2%;
 	}
+
+	#yearbook ul {
+		margin:0;
+	}
+
+	#yearbook li.leftmost {
+		margin:1em auto;
+		padding: 0;
+	}
+
+	.post-170 h2 {
+		text-align: center !important;
+	}
 }
 
 /* Only iPad Portrait (not Iphone or desktop) */
@@ -3511,6 +3552,10 @@ a.contactus:hover{color:#eee}
 		width: 40%;
 		margin: 16px 2.5% 10px 2.5%;
 		min-height:300px;
+	}
+
+	#header ul.genesis-nav-menu {
+		margin-top:1em;
 	}
 
 }
@@ -3612,9 +3657,8 @@ a.contactus:hover{color:#eee}
 		
 	}
 
-	#menu-item-508 a{
-		opacity: 0;
-		color:#27b4b2;
+	.genesis-nav-menu .pd-menu a {
+    	color: #141414;
 	}
 
 	.genesis-nav-menu li:first-child {
@@ -3662,14 +3706,6 @@ a.contactus:hover{color:#eee}
 	}
 	.processSort .one-third img, .processSort .one-third p {
 		display:none;
-	}
-
-	#yearbook ul {
-		margin:0;
-	}
-
-	#yearbook li.leftmost {
-		margin-bottom:2em;
 	}
 
 	#timemachine {

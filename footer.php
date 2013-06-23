@@ -86,24 +86,40 @@ jQuery('.processSort .processType > a').click(function() {
     // Turn opacity to zero on load
     $('#scroll-top span').css('opacity', 0)
 
-    // Change opacity of up arrow as user scrolls down
+
+
     $(window).scroll(function () {
+
+    // Change opacity of up arrow as user scrolls down
       var screenHeight = $(window).height();
       var htmlHeight = $(document).height();
       var currentPosition = window.pageYOffset;
       $('#scroll-top span').css('opacity', currentPosition/htmlHeight);
+
     });
+
+    // For the about page this function rearranges html so that layout
+    // is consistent for yearbook on ipad/iphone  
+    if (document.URL === 'http://studioissa.com/about/' && $(window).width() <= 786) {
+      var jayHTMLobject = $('.post-170 .entry-content section').eq(1).find('.one-third')
+      var jayHTML = jayHTMLobject.html();
+      jayHTMLobject.remove();
+      jQuery('.post-170 .entry-content section').eq(1).find('h2').after('<div class="one-third"'+jayHTML+'</div>')
+    }
 
     // Function to add client login and subscribe to log links at end of list
     $('#menu-header-navigation').append('<li class="PD-mobile"><a href="http://eepurl.com/z1VSL" data-fancybox-type="iframe" class="iframe fancybox" rel="fancybox">Subscribe to Our Blog</a></li><li class="PD-mobile"><a href="http://studioissa.com/client-login/">Client Login</a></li>');
+
+    // Also prepend and empty button for just the menu button
+    $('#menu-header-navigation').prepend('<li class="PD-mobile pd-menu"><a href="Javascript:void(0)">Menu</a></li>') 
 
     // Add Menu button
     $('#header').prepend('<div class="PD-mobile"><a href="#" class="menu-button"><img src="http://studioissa.com/wp-content/uploads/2013/06/nav-expand-icon.png"></a></div>');
 
     // Expand menu on click of it
-    $(".menu-button").toggle(
+    $(".menu-button, .pd-menu").toggle(
       function () {
-        $('#header').animate({height: '426px'}, 800);
+        $('#header').animate({height: '473px'}, 800);
         $('#menu-item-508 a').animate({opacity : 1}, 500);
       },
       function () {
