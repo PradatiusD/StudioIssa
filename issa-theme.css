@@ -3523,10 +3523,15 @@ a.contactus:hover{color:#eee}
 		font-size: 87.5%; /* 14px base */
 	}
 
+	#SlideDeck-491, #SlideDeck-491-frame, #SlideDeck-491 dd {
+		height:960px !important;
+	}
+
 	#title a::before {
 		height: 50px;
 		width: 50px;
 	}
+
 
 	#blog .featuredpost .post:nth-of-type(3n+0),
 	#blog .featuredpost .post:nth-of-type(3n+1),
@@ -3669,5 +3674,13 @@ a.contactus:hover{color:#eee}
 
 	#timemachine {
 		display: none;
+	}
+}
+
+/* iPhones (portrait only) ----------- */
+
+@media only screen and (max-width: 320px) {
+	#SlideDeck-491, #SlideDeck-491-frame, #SlideDeck-491 dd {
+		height:1200px !important;
 	}
 }
