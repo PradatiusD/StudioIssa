@@ -3496,10 +3496,10 @@ class^="icon-"] {color: black;}
 		padding: 0;
 		vertical-align: top;
 		min-height: 0;
-		width: 17%;
+		width: 20%;
 	}
 	#SlideDeck-491, #SlideDeck-491-frame, #SlideDeck-491 dd {
-		height:600px !important;
+		height:680px !important;
 	}
 	
 	.page-template-page_blog-php .post-comments, .post span.post-comments {
@@ -3507,10 +3507,10 @@ class^="icon-"] {color: black;}
 		padding: 0 0;
 	}
 	
-	
+	#SlideDeck-491 dd, #SlideDeck-491, #SlideDeck-491-frame {
+		width:100% !important;
+	}
 
-
-	
 }
 
 
@@ -3544,7 +3544,11 @@ class^="icon-"] {color: black;}
 		padding: 0 0;
 	}
 	
-
+	.clipboard-first, .clipboard {
+		width: 42.5%;
+		margin: 15px 2.5%;
+		min-height: 300px;
+	}
 
 }
 
@@ -3586,6 +3590,7 @@ class^="icon-"] {color: black;}
 /* iPads (portrait) ----------- */
 
 @media only screen and (max-width: 768px) {
+
 
 	#about,
 	#services {
@@ -3918,13 +3923,6 @@ Display menu toggle button on ipad portrait
 		width: 80% !important;
 	}
 
-	.clipboard-first, .clipboard {
-		width: 40%;
-		margin: 16px 2.5% 10px 2.5%;
-		min-height:300px;
-	}
-
-
 	#header ul.genesis-nav-menu {
 		margin-top: 1em;
 		clear: both;
@@ -3939,8 +3937,18 @@ Display menu toggle button on ipad portrait
 }
 
 
-
-
+/* Point at which clipboards for services page get stacked on one column */
+@media only screen and (max-width:569px) {
+	.clipboard-first, .clipboard {
+		width: 92.5%;
+		margin: 15px 2.5%;
+		min-height: 221px;
+	}
+	#SlideDeck-491, #SlideDeck-491-frame, #SlideDeck-491 dd {
+		height:1040px !important;
+	}
+	
+}
 
 
  
@@ -3955,10 +3963,6 @@ Display menu toggle button on ipad portrait
 
 	#about p, .three-fourths, #bottom-info p, .entry-content, #services p {
 		text-align: justify;
-	}
-
-	#SlideDeck-491, #SlideDeck-491-frame, #SlideDeck-491 dd {
-		height:960px !important;
 	}
 
 	#title a::before {
