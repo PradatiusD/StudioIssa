@@ -196,7 +196,8 @@ h2 a:hover,
 .post-meta a:hover,
 #footer a:hover,
 #header .genesis-nav-menu li a:hover,
-#header .genesis-nav-menu li.current-menu-item a {
+#header .genesis-nav-menu li.current-menu-item a,
+.single-post .menu-item-551 a {
 	color: #27b4b2;
 }
 
@@ -284,6 +285,12 @@ letter-spacing: 3px;
 line-height: 80px;
 margin-bottom: 0;
 }
+
+.single .entry-title {
+	margin-bottom: .2em;
+	background: url('images/dots_horizontal.png') center bottom repeat-x;
+	line-height: 95px;
+	}
 
 blockquote::before {
 	font-size: 32px;
@@ -543,6 +550,13 @@ h2 a:visited,
 /* Jaime added the section below */
 	z-index: 10;
 /* End Jaime addition */
+	margin-bottom: 30px;
+}
+
+.page-id-443 #header {
+border: none;
+z-index: 10;
+margin-bottom: 0px;
 }
 
 #title-area {
@@ -634,6 +648,8 @@ margin: 0 auto;
     height: 125px;
     text-indent: -9999px;
     width: 200px;
+    float: none;
+	margin: 0 auto;
 }
 
 #title a::before {
@@ -791,7 +807,7 @@ margin: 0 auto;
 	text-shadow: 1px 1px 0 #fff;
 	/*font-weight: bold;*/
 	clear:both;
-	padding: 3rem 0 6rem;
+	padding: 0rem 0 6rem;
 	max-width: 100%;
 	height: 19rem;
 	min-height: 100%;
@@ -829,7 +845,11 @@ margin: 0 auto;
 .entry,
 .page .post.entry {
 	margin: 2em auto;
-	padding: 5%;
+	padding: 0% 5%;
+}
+
+.entry, .post.entry {
+	margin: 0em auto;
 }
 
 .mp-home .featuredpost .entry,
@@ -902,13 +922,13 @@ blockquote::before {
 	margin-bottom: 1.5rem;
 }
 
-.post-comments {
+/*.post-comments {
 	background: url(images/post-comments.png) no-repeat center left;
 	margin-left: 16px;
 	margin-left: 1rem;
 	padding-left: 20px;
 	padding-left: 1.25rem;
-}
+}*/
 
 .post-meta::before {
 	content: "";
@@ -1924,13 +1944,28 @@ a.reveal:hover .pane {
         font-family: 'proxima-nova-1', 'proxima-nova-2', sans-serif;
 }
 
-#fh-h1, #fh-i2, #fh-f3 {
+#fh-h1, #fh-i2 {
 	width:33.33%;
+}
+
+#fh-f3 {
+	width:33.34%;
 }
 
 #fh-h1 .pane, #fh-i2 .pane, #fh-f3 .pane {
 	background-size:100%; 
 }
+
+	.page-template-page_blog-php .post-comments,
+	.post span.post-comments	{
+		display: block;		
+	}
+	
+	 .post-comments	{
+		display: none;		
+	}
+	
+
 
 /*
 14 Corner Tag
@@ -2586,8 +2621,8 @@ span.SliderCaption {
   height: 216px;
   background: url(http://studioissa.com/wp-content/themes/issa-studio/images/time-machine1-v3.png);
   background-position: 0px 0px;
-  right: 10%;
-  top: 877px;
+  right: 0;
+  top: 990px;
   cursor:pointer; 
 }
   
@@ -2641,12 +2676,12 @@ span.SliderCaption {
     background-image:url('http://studioissa.com/wp-content/uploads/2013/06/innovators-for-the-public.png');
     background-size:100%;
     background-repeat:no-repeat;
-    background-position: center top;
+    background-position: center bottom;
     background-attachment: fixed;
 }
 
 .page-id-37 .post.entry {
-	background: rgba(229, 233, 127, 0.21);
+	background: rgba(255, 255, 255, 0.21);
 }
 
 .page-id-37 #inner {
@@ -2680,6 +2715,7 @@ span.SliderCaption {
 
 .page-id-37 .entry-content img {
 	max-width: 100%;
+	width: 100%;
 	height: auto;
 }
 
@@ -2693,7 +2729,6 @@ span.SliderCaption {
 
 .page-id-37 .more-link {
     display: block;
-    background: none;
     color: #27B4B2;
     margin-top: 1em;
     text-align: left;
@@ -2832,7 +2867,17 @@ margin-top: 1rem;
 
 	.contact-page {
 	max-width: 1080px;
-	margin: 0 auto;
+	margin: 0em auto;
+	padding: 0% 5%;
+	}
+	
+	.mp-home #inner {
+	max-width: none;
+	}
+	
+	.mp-home .entry {
+		margin: 0;
+		padding: 0;
 	}
 	
 	.services {
@@ -3035,6 +3080,10 @@ a.contactus:hover{color:#eee}
 }
 
 
+.general-info {
+	display: none;
+	}
+
 /*
 14 social icons
 ---------------------------------------------------------------------------------------------------- */
@@ -3089,8 +3138,15 @@ a.contactus:hover{color:#eee}
  
 .icons a:hover { background-position: left -34px; }
 
-
 /*
+14 ShareDaddy
+*/
+
+div.sharedaddy .sd-content {
+width: 100%;
+float: left !important;
+}
+
 14 FAQ Takeover jQuery
 ---------------------------------------------------------------------------------------------------- */
 
@@ -3249,9 +3305,9 @@ a.contactus:hover{color:#eee}
 	text-transform:uppercase;
 	text-decoration:none;
 	color:#bbb;
-	-webkit-transition:1s;
-	-moz-transition:1s;
-	transition:1s;
+	-webkit-transition:0s;
+	-moz-transition:0s;
+	transition:0s;
 }
 
 #scroll-top a:hover
@@ -3268,11 +3324,11 @@ a.contactus:hover{color:#eee}
 	-webkit-transition:1s;
 	-moz-transition:1s;
 	transition:1s;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-	filter: alpha(opacity=70);
-	-moz-opacity: 0.7;
-	-khtml-opacity: 0.7;
-	opacity: 0.7;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	-moz-opacity: 0.;
+	-khtml-opacity: 0.;
+	opacity: 0.;
 
 }
 
@@ -3284,6 +3340,143 @@ a.contactus:hover{color:#eee}
 	text-align: center;
 }
 
+
+.single-post span.post-comments a {
+	background: url(images/comment_ribbon.png) no-repeat top right;
+	color: #fff;
+	display: block !important;
+	height: 23px;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0 0 -28px;
+	padding: 0 70px 0 10px;
+	position: relative;
+	text-transform: uppercase;
+	top: 6px;
+	float: left;
+}
+
+.single-post span.post-comments a:hover { background-position: right -23px }
+
+.page-template-page_blog-php .post-comments a{
+	background: url(images/comment_ribbon.png) no-repeat top right;
+	color: #fff;
+	display: block;
+	height: 23px;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0 0 -28px;
+	padding: 0 70px 0 10px;
+	position: absolute;
+	text-transform: uppercase;
+}
+.post-comments a:hover { background-position: right -23px }
+
+.page .post-comments,
+.mp-home .post-comments {
+	display: none;
+	}
+
+.page-template-page_blog-php .post-comments {
+	display: block !important;
+}
+
+/*.post-comments span {
+		background: url(images/comment_flip.png) no-repeat;
+		height: 28px;
+		position: absolute;
+		width: 7px
+	}
+.post-comments span { background-position: 0 -28px } */
+
+
+.single-post .post-info {
+	display: none;
+}
+
+
+div.sharedaddy .sd-content {
+	width: 83% !important;
+	float: right !important;
+}
+
+div.sharedaddy div.sd-block {
+	border-top: none !important;
+	border-top: none;
+}
+
+.featuredpost {
+	background-color: white;
+}
+
+.featuredpost h2 a {
+	background: none;
+	color: #27b4b2;
+	font-size: 20px;
+	font-size: 1.25rem;
+	-moz-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	font-weight: 300;
+	list-style-type: none;
+}
+
+
+
+
+	.more-link {
+		background: url(http://studioissa.com/wp-content/themes/issa-studio/images/more_link.png) no-repeat left 8px;
+		color: #af1b80;
+		font-size: .8em;
+		font-weight: bold;
+		letter-spacing: 1px;
+		padding-left: 1.8em;
+		text-decoration: none;
+		text-transform: uppercase
+	}
+	
+	
+	div.sharedaddy .sd-content ul {
+		float: right !important;
+	}
+
+	li#menu-item-609 {
+		display: none;
+	}
+	
+	li#menu-item-610 {
+		display: none;
+	}
+
+
+
+
+/* Navigation Toggle hide menu toggle on large screens
+------------------------------------------------------------ */
+	.menu-toggle {
+		display: none;
+		visibility: hidden;
+	}
+
+Read more at http://youneedfat.com/genesis-responsive-design-menu/#QPAkei2PD2Qg0ucX.99 
+
+.menu-toggle span {
+	text-align: left;
+}
+
+.menu-toggle i.icon-reorder {
+	font-size: 48px;
+	font-size: 2rem;
+	float: right;
+	margin: 12px;
+	color: #27b4b2;
+}
+
+class^="icon-"] {color: black;}
+
+	.genesis-nav-menu {
+	display: block;
+	}
 
 
 /*
@@ -3308,6 +3501,16 @@ a.contactus:hover{color:#eee}
 	#SlideDeck-491, #SlideDeck-491-frame, #SlideDeck-491 dd {
 		height:600px !important;
 	}
+	
+	.page-template-page_blog-php .post-comments, .post span.post-comments {
+		display: block;
+		padding: 0 0;
+	}
+	
+	
+
+
+	
 }
 
 
@@ -3335,6 +3538,13 @@ a.contactus:hover{color:#eee}
 	.page-id-37 .entry-content img {
 		width:100%;
 	}
+	
+	.page-template-page_blog-php .post-comments, .post span.post-comments {
+		display: block;
+		padding: 0 0;
+	}
+	
+
 
 }
 
@@ -3347,7 +3557,31 @@ a.contactus:hover{color:#eee}
 		display: block;
 		margin:1.4em 0em;
 	}
+	
+	.ipad-show {
+			display: none;
 }
+
+	.page-template-page_blog-php .post-comments, .post span.post-comments {
+		display: block;
+		padding: 0 0%;
+	}
+	
+
+	
+
+}
+
+
+/* Navigation Toggle - Ensure Menu Displays When Scaled Up
+------------------------------------------------------------ */
+@media only screen and (min-width: 769px) {
+/* Show Nav Menu items when larger than 769px  */	
+	.genesis-nav-menu {
+	display: block !important;
+	}
+}
+
 
 /* iPads (portrait) ----------- */
 
@@ -3398,14 +3632,20 @@ a.contactus:hover{color:#eee}
 	
 	.clientlogin {
 		right: 10%;
+		display: none;
 	}
 
 	.subscribeblog {
 		left:8%;
+		display: none;
 	}
 
 	.entry-content, .entry-title {
 	    padding: 0 5%;
+	}
+	
+	.innovators .entry-title {
+	    padding: 0 0;
 	}
 
 	.post-170 .one-fifth.first, .post-170 .one-third {
@@ -3431,6 +3671,10 @@ a.contactus:hover{color:#eee}
 	#wrap #sidebar-alt {
 		width: 100%;
 	}
+	
+	#sidebar.sidebar.widget-area {
+		display: none;
+	}
 
 	.page-id-37 #wrap  #content {
 		width: 80%;
@@ -3445,6 +3689,10 @@ a.contactus:hover{color:#eee}
 	#header .search-form {
 		float: none;
 	}
+	
+	.genesis-nav-menu li {
+		/*margin-top: 1em;*/
+		}
 
 
 
@@ -3460,6 +3708,13 @@ a.contactus:hover{color:#eee}
 	#header {
 		padding: 0;
 	}
+	
+	.mp-home #header {
+	border: none;
+	z-index: 10;
+	margin-bottom: 0px;
+}
+
 
 	#title-area {
 		padding: 12px 0 0;
@@ -3528,6 +3783,7 @@ a.contactus:hover{color:#eee}
 		width: 96%;
 		padding: 0%;
 		margin: 2%;
+		text-align: justify;
 	}
 
 	#yearbook ul {
@@ -3536,17 +3792,131 @@ a.contactus:hover{color:#eee}
 
 	#yearbook li.leftmost {
 		margin:1em auto;
-		padding: 0;
+		/*padding: 0;*/
 	}
 
 	.post-170 h2 {
 		text-align: center !important;
 	}
+	
+	div.sharedaddy div.sd-block {
+		border-top: none !important;
+	}
+	
+	div.sharedaddy .sd-content {
+		width: 60% !important;
+	}
+	
+	.general-info {
+		display: block;
+	}
+	
+	.contact-page .two-fifths {
+		display:none;
+	}
+	
+	.ipad-show {
+		display: block;
+	}
+	
+	
+	.ipad-hide {
+		display: none;
+	}
+	#yearbook li {
+		float: none;
+		display: block;
+		padding-left: 0px;
+		padding-top: 0px;
+	}
+	
+	.page-template-page_blog-php .post-comments,
+	.post span.post-comments {
+		display: block;
+		padding: 0 5%;
+	}
+	
+		li#menu-item-609 {
+		display: inline-block;
+	}
+	
+	li#menu-item-610 {
+		display: inline-block;
+	}
+	
+		/* hide shadow on front page picture from overlapping with menu toggle */
+	.pictureframe {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+	
+	
+		/* Navigation Toggle Show - Mobile (Change Width to Whatever)
+---------
+Display menu toggle button on ipad portrait
+--------------------------------------------------- */
+
+	.menu-toggle {
+		background: white;
+		color: #27b4b2;
+		display: inline-block;
+		float:right;
+		font-size: 16px;
+		line-height:16px;
+		font-weight:700;
+		overflow: hidden;
+		margin: 11px 0 0;
+		text-align: center;
+		text-transform:uppercase;
+		visibility: visible;
+		moz-border-radius:3px;
+		webkit-border-radius:3px;
+		border-radius:3px;
+		width: 100%;
+		float: left;
+		border: lightgrey 1px solid;
+	}
+
+	.menu-toggle a {
+		color: #27b4b2;
+		display:block;
+		padding: 15px;
+		float: left;
+	}
+ 
+	.menu-toggle a:hover,
+	.menu-toggle a:active {
+		text-decoration:none;
+	}
+	
+	#header ul.genesis-nav-menu {
+		margin-top: 1em;
+		clear: both;
+		top: 0px;
+		background: white;
+		display: none;
+	}
+	
+	
 }
+	
+
+
+	
+	
+	
+
+
+
 
 /* Only iPad Portrait (not Iphone or desktop) */
 
 @media only screen and (min-width:481px) and (max-width: 768px) {
+
+	div.sharedaddy .sd-content {
+		width: 80% !important;
+	}
 
 	.clipboard-first, .clipboard {
 		width: 40%;
@@ -3554,11 +3924,26 @@ a.contactus:hover{color:#eee}
 		min-height:300px;
 	}
 
+
 	#header ul.genesis-nav-menu {
-		margin-top:1em;
+		margin-top: 1em;
+		clear: both;
+		top: 0px;
+		background: white;
+	}
+
+	.two-thirds {
+	width: 100%;
 	}
 
 }
+
+
+
+
+
+
+ 
 
 /* iPhones (portrait and landscape) ----------- */
 
@@ -3566,6 +3951,10 @@ a.contactus:hover{color:#eee}
 
 	html {
 		font-size: 87.5%; /* 14px base */
+	}
+
+	#about p, .three-fourths, #bottom-info p, .entry-content, #services p {
+		text-align: justify;
 	}
 
 	#SlideDeck-491, #SlideDeck-491-frame, #SlideDeck-491 dd {
@@ -3607,10 +3996,15 @@ a.contactus:hover{color:#eee}
 		margin: 0;
 		width: 100%;
 	}
+	
+		.alignright {
+		float: left;
+		margin-top: .5em;
+	}
 
 
 	/* Navigation for iphone */
-	#header {
+/*	#header {
 		top:0;
 		display: block;
 		height: 188px;
@@ -3680,7 +4074,7 @@ a.contactus:hover{color:#eee}
 	.genesis-nav-menu li.PD-mobile, #header .PD-mobile {
 		display:block;
 	}
-
+*/
 	.clipboard-first, .clipboard {
 		width: 90%;
 		margin: 16px 2.5% 10px 2.5%;
@@ -3696,7 +4090,7 @@ a.contactus:hover{color:#eee}
 
 	h2 {
 		display: block;
-		margin: 0 auto;
+		margin: 0 auto 20px;
 		padding:0;
 		text-align: center;
 	}
@@ -3711,6 +4105,25 @@ a.contactus:hover{color:#eee}
 	#timemachine {
 		display: none;
 	}
+
+	div.sharedaddy .sd-content {
+		width: 100% !important;
+		clear: both;
+		margin: 2rem 0 0 0 !important;
+	}
+	
+	#portfolio {
+		padding: 20px 0 50px;
+		padding: 2rem 0 3rem;
+}
+
+	#header ul.genesis-nav-menu {
+		margin-top: 1em;
+		clear: both;
+		top: 0px;
+		background: white;
+	}
+
 }
 
 /* iPhones (portrait only) ----------- */
@@ -3719,4 +4132,16 @@ a.contactus:hover{color:#eee}
 	#SlideDeck-491, #SlideDeck-491-frame, #SlideDeck-491 dd {
 		height:1200px !important;
 	}
+	
+	.alignright {
+		float: left;
+	}
+	
+	#header ul.genesis-nav-menu {
+		margin-top: 1em;
+		clear: both;
+		top: 0px;
+		background: white;
+	}
+
 }
