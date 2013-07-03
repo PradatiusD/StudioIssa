@@ -46,15 +46,6 @@ jQuery('.processSort .processType > a').click(function() {
     //And call it when browser resizes
     $(window).resize(function() {
       fixrevealHeight();
-      // Also If browser width is greater than iphone size make sure 
-      // that Services tab has the correct level of opacity
-      if (document.body.clientWidth > 480) {
-          $('#menu-item-508 a').css('opacity', 1);
-          $('#header').css('height', '208px');
-      } else {
-          $('#menu-item-508 a').css('opacity', 0);
-          $('#header').css('height','188px');
-      }
     });
 
     // On the blog page, make the read more tags have title information
@@ -107,26 +98,10 @@ jQuery('.processSort .processType > a').click(function() {
       jQuery('.post-170 .entry-content section').eq(1).find('h2').after('<div class="one-third"'+jayHTML+'</div>')
     }
 
-    // Function to add client login and subscribe to log links at end of list
-    $('#menu-header-navigation').append('<li class="PD-mobile"><a href="http://eepurl.com/z1VSL" data-fancybox-type="iframe" class="iframe fancybox" rel="fancybox">Subscribe to Our Blog</a></li><li class="PD-mobile"><a href="http://studioissa.com/client-login/">Client Login</a></li>');
+  
+ 
+  
 
-    // Also prepend and empty button for just the menu button
-    $('#menu-header-navigation').prepend('<li class="PD-mobile pd-menu"><a href="Javascript:void(0)">Menu</a></li>') 
-
-    // Add Menu button
-    $('#header').prepend('<div class="PD-mobile"><a href="#" class="menu-button"><img src="http://studioissa.com/wp-content/uploads/2013/06/nav-expand-icon.png"></a></div>');
-
-    // Expand menu on click of it
-    $(".menu-button, .pd-menu").toggle(
-      function () {
-        $('#header').animate({height: '473px'}, 800);
-        $('#menu-item-508 a').animate({opacity : 1}, 500);
-      },
-      function () {
-        $('#header').animate({height: '188px'}, 800);
-        $('#menu-item-508 a').animate({opacity : 0}, 500);
-      }
-    );
   });
 </script>
 
